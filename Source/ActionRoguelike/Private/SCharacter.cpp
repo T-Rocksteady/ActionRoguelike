@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Tetyana Meleshchenko. All rights reserved.
 
 #include "SCharacter.h"
 #include "GameFramework/SpringArmComponent.h"
