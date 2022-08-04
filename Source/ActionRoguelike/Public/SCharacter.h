@@ -8,6 +8,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
+class USInteractionComponent;
 
 UCLASS()
 class ACTIONROGUELIKE_API ASCharacter : public ACharacter
@@ -28,10 +29,14 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* CameraComp;
 
+	UPROPERTY(VisibleAnywhere)
+	USInteractionComponent* InteractionComp;
+
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 
 	void PrimaryAttack();
+	void PrimaryInteract();
 
 public:	
 	virtual void Tick(float DeltaTime) override;
